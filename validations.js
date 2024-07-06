@@ -16,5 +16,5 @@ export const postCreateValidation = [
   body('title', 'Add post title').isLength({ min: 3 }).isString(),
   body('text', 'Add post content').isLength({ min: 10 }).isString(),
   body('tags', 'Incorrect tags format').optional().isArray(),
-  body('imageUrl', 'Incorrect link for the image url').optional().isURL(),
+  body('imageUrl', 'Incorrect link for the image url').optional().isString(),
 ]

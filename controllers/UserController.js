@@ -61,6 +61,7 @@ export const login = async (req, res) => {
         message: "Wrong password or login"
       });
     }
+    console.log('userID', user._id)
 
     const token = jwt.sign({
       _id: user._id,

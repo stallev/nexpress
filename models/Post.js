@@ -20,7 +20,7 @@ const PostSchema = new mongoose.Schema(
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'UserModel',
+      ref: 'User',
       required: true,
     },
     imageUrl: String,
@@ -30,4 +30,4 @@ const PostSchema = new mongoose.Schema(
   }
 );
 
-export default mongoose.model('PostModel', PostSchema);
+export default mongoose.model('Post', PostSchema);
